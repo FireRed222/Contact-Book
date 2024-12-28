@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Book</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="contact">
+        <h1 class="ttl">Contact Book</h1>
+        <form class="form">
+            <button class="reset" type="reset" onclick="reset()">Reset</button>
+
+            <h2 class="subttl">Add New Contact</h2>
+
+            <div class="block1">
+                <input type="text" id="name" placeholder="Enter Contact Name">
+                <input type="text" id="number" placeholder="Enter Contact Number">
+                
+            </div>
+            <button type="button" onclick="addContact()">Submit</button>
+            <p class="confirmed" id="confirmation"></p>
+
+            <hr class="divider1">
+
+            <h2 class="subttl">Get Contact Details</h2>
+
+            <div class="block2">
+                <input type="text" class="input" id="get_name" placeholder="Contact Name">
+                <button type="button" class="btn" onclick="getContact()">Get Detail</button>
+            </div>
+
+            <p class='text' id="display_info"></p>
+
+            
+        </form>
+    </div>
+    
+</body>
+</html>
